@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jacob Lucas | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <!--Cursor-->
+    <div class="outer-cursor"></div>
+    <div class="inner-cursor"></div>
+
+    <!--Navigation and Logo Section-->
+    <div class="wrapper">
+      <header class="nav">
+        <div class="nav-bar">
+          <a href="index.html">
+            <h1 class="logo">Jacob Lucas</h1>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#works">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+            <i class="fas fa-times"></i>
+          </nav>
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+
+      <main>
+        <!--Left Scroll Down-->
+        <div class="backto-top">
+          <div class="backto-wrap">
+            <a href="#works">
+              <h5 class="uppercase"><span>SCROLL DOWN</span></h5>
+            </a>
+          </div>
+        </div>
+
+        <!--Hero Section-->
+        <section class="hero">
+          <div>
+            <img src="images/me.jpg" alt="" class="me" />
+            <div class="left-hero">
+              <h1 class="hero-text">
+                FRONT-END WEB<br />DEVELOPER<br />& CREATIVE<br />PROGRAMMER
+              </h1>
+              <a href="#contact">
+                <img
+                  class="hero-contact-button"
+                  src="images/contact.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div>
+            <img id="rotate" src="images/Asset1.png" alt="" />
+          </div>
+        </section>
+
+        <!--Work Section-->
+        <section class="section-works" id="works">
+          <div class="work-items">
+            <div class="line"></div>
+
+            <a
+              class="work-item"
+              data-img="images/anime_conventions.png"
+              href="/AnimeConventions.html"
+            >
+              <p class="work-text">Codes & Conventions of Anime</p>
+            </a>
+            <div class="work-img-wrap">
+              <div class="work-img"></div>
+            </div>
+
+            <div class="line"></div>
+
+            <a
+              class="work-item"
+              data-img="images/popoto.png"
+              href="popoto.html"
+            >
+              <p>Auckland Art festival Proposal</p>
+            </a>
+            <div class="work-img-wrap">
+              <div class="work-img"></div>
+            </div>
+
+            <div class="line"></div>
+
+            <a class="work-item" data-img="images/flux.png" href="flux.html">
+              <p>FLUX New Enterprise</p>
+            </a>
+            <div class="work-img-wrap">
+              <div class="work-img"></div>
+            </div>
+
+            <div class="line"></div>
+
+            <a
+              class="work-item"
+              data-img="images/Gunnm.jpg"
+              href="https://dribbble.com/humantwig"
+              target="_blank"
+            >
+              <p>Personal Design Work</p>
+            </a>
+            <div class="work-img-wrap">
+              <div class="work-img"></div>
+            </div>
+
+            <div class="line"></div>
+          </div>
+        </section>
+
+        <!--About Section-->
+        <section class="about" id="about">
+          <span class="about-top-text">Hi I'm Jacob Lucas.</span>
+          <div>
+            <p class="about-text">
+              <span>A</span> <span>20</span> <span>year</span> <span>old</span>
+              <span>Designer</span><span>,</span><span> Developer</span
+              ><span>,</span> <span>Problem</span> <span>Solver</span
+              ><span> and</span> <span>Multi</span> <span>Media</span>
+              <span>Enthusiast</span><span>.</span> <span>I</span>
+              <span>love</span> <span>to</span> <span>work</span>
+              <span>with</span> <span>code</span> <span>and</span>
+              <span>see</span> <span>how</span> <span>I</span> <span>can</span>
+              <span>challenge</span> <span>the</span> <span>status</span>
+              <span>quo</span> <span>of</span> <span>my</span> <span>own</span>
+              <span>abilities</span><span>.</span>
+            </p>
+            <p class="about-text">
+              <span>Some</span> <span>of</span> <span>my</span>
+              <span>relevant</span> <span>skills</span> <span>include</span
+              ><span>;</span> <span>HTML5</span><span>,</span> <span>CSS</span
+              ><span>/</span> <span>SCSS</span><span>,</span>
+              <span>JAVASCRIPT</span><span>,</span> <span>p5.js</span
+              ><span>,</span> <span>Photoshop</span><span>,</span>
+              <span>Illustrator</span><span>,</span> <span>Indesign</span
+              ><span>,</span> <span>XD</span> <span>and</span> <span>Figma</span
+              ><span>.</span>
+            </p>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+          <a href="mailto:abc@example.com?subject = Feedback&body = Message">
+            <h1>Flick Me <br />an email</h1>
+          </a>
+        </section>
+      </main>
+
+      <!------Footer------>
+      <footer class="footer-container">
+        <div class="foot-content">Designed & Built by Jacob Lucas</div>
+        <div class="socials">
+          <ul class="social-list">
+            <li>
+              <a href="https://www.linkedin.com/in/jlucasnz/" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/humantwig" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/teh_twig/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="scripts/herogsap.js"></script>
+    <script src="scripts/rotate.js"></script>
+    <script src="scripts/workgsap.js"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
