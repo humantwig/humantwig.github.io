@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@font-face {
+  font-family: akira;
+  src: url(../font/akira-expanded.otf);
+}
+
+:root {
+  --orange: #ee5625;
+  --black: #1c1c1c;
+  --white: #e9e4de;
+}
+
+.study-hero {
+  padding-top: 20vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.study-hero div {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 780px) {
+  .study-hero div {
+    margin-top: 1em;
+  }
+}
+
+.study-hero div .left-hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.study-hero div .left-hero .hero-text {
+  margin: 1em 0em 0em 0em;
+  font-size: 7.4vw;
+  font-family: akira;
+  line-height: 1;
+  z-index: 2;
+}
+
+@media screen and (min-width: 780px) {
+  .study-hero div .left-hero .hero-text {
+    font-size: 7.4vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .study-hero div .left-hero .hero-text {
+    font-size: 4vw;
+    margin: auto 0 auto 0;
+  }
+}
+
+.study-hero div .left-hero h5 {
+  padding-top: 1em;
+  font-size: 2.5vw;
+}
+
+@media screen and (min-width: 1000px) {
+  .study-hero div .left-hero h5 {
+    margin: auto 0 auto 0;
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .study-hero div {
+    padding-top: 3vh;
+  }
+}
+
+.study-hero .links {
+  margin: auto auto 0 0;
+}
+
+.study-hero .links a {
+  text-decoration: none;
+  color: var(--orange);
+  padding-top: 1em;
+  font-size: 2.5vw;
+}
+
+@media screen and (min-width: 1000px) {
+  .study-hero .links a {
+    margin: auto 0 auto 0;
+    font-size: 1em;
+  }
+}
+
+.section-case {
+  font-weight: 700;
+  margin: 5em 0em 5em 0em;
+  padding-top: 5vh;
+}
+
+.section-case .top-case {
+  margin: 0 0 30vh 0;
+}
+
+.section-case .top-case .abstract {
+  max-width: 1000px;
+}
+
+.section-case .top-case .abstract .team ul li {
+  list-style-type: "—";
+  padding-left: 1.2rem;
+  font-size: 0.7em;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-case .top-case .abstract p {
+  font-size: 0.7em;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-case .process {
+  max-width: 1000px;
+}
+
+.section-case .process .initial {
+  margin-bottom: 15vh;
+}
+
+.section-case .process .initial p {
+  font-size: 0.7em;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-case .process .initial img {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.section-case .process .experiment {
+  margin-bottom: 15vh;
+}
+
+.section-case .process .experiment p {
+  font-size: 0.7em;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-case .process .experiment img {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.section-case .process .development {
+  margin-bottom: 15vh;
+}
+
+.section-case .process .development p {
+  font-size: 0.7em;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-case .process .development img {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.section-case .process .mockups {
+  margin-bottom: 15vh;
+}
+
+.section-case .process .mockups p {
+  font-size: 0.7em;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-case .process .mockups img {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.section-case .process .final {
+  margin-bottom: 15vh;
+}
+
+.section-case .process .final p {
+  font-size: 0.7em;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-case .process .final img {
+  margin-top: 2em;
+  width: 100%;
+}
+
+.section-case .process .final iframe {
+  width: 100%;
+  height: 50vh;
+}
+/*# sourceMappingURL=casestudy.css.map */

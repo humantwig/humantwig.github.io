@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+section {
+  float: left;
+  width: 33.33%;
+  padding: 30px;
+  margin-right: 5em;
+}
+
+.bold {
+  font-weight: 700;
+}
+.semibold {
+  font-weight: 600;
+}
+.regular {
+  font-weight: 400;
+}
+.light {
+  font-weight: 300;
+}
+
+.p40 {
+  font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.p24 {
+  font-size: 24px;
+}
+
+.p16 {
+  font-size: 16px;
+}
+
+.p12 {
+  font-size: 12px;
+}
+
+.p10 {
+  font-size: 10px;
+}
+
+.p9 {
+  font-size: 9px;
+}
+
+.p8 {
+  font-size: 8px;
+}
+
+section div {
+  margin-bottom: 2em;
+}
+
+h5 {
+  margin: 0;
+}
+
+
+
+
+
+
+footer {
+    background-color: #fff;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    font-size: 0.6em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .nav-bar {
+    padding: 3% 20%;
+  }
+  
+  .nav-contents {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  .nav-contents div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin: 0;
+  }
+
+
+
+
+
+
+
+.colours p{
+    margin-bottom: 2em;
+}
+
+.colours div{
+    display: flex;
+}
+
+
+.black {
+  width: 150px;
+  height: 150px;
+  background-color: #141414;
+  margin-right: 20px;
+}
+.gradient {
+  width: 150px;
+  height: 150px;
+  background: rgb(248, 177, 37);
+  background: linear-gradient(
+    90deg,
+    rgba(248, 177, 37, 1) 0%,
+    rgba(238, 122, 31, 1) 30%,
+    rgba(219, 15, 21, 1) 100%
+  );
+  margin-right: 20px;
+}
+.white {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 2px solid #000;
+  margin-right: 20px;
+}
+.yellow {
+  width: 150px;
+  height: 150px;
+  background-color: #FFB31A;
+  margin-right: 20px;
+}
+.orange {
+  width: 150px;
+  height: 150px;
+  background-color: #FF7C0A;
+  margin-right: 20px;
+}
+.red {
+  width: 150px;
+  height: 150px;
+  background-color: #A12B2F;
+  margin-right: 20px;
+}
+
+
+
+
+
+input::after{
+    background-color: #FF7C0A;
+}
+
+
+
+.buttons {
+    width: 100%;
+    margin-top: 2em;
+}
+
+.buttons div{
+    margin: 5px 0;
+}
+  
+.login button {
+    width: 100%;
+    color: white;
+    background-color: #FF7C0A;
+    padding: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+}
+  
+.signup button {
+    width: 100%;
+    color: white;
+    background-color: #FF7C0A;
+    padding: 8px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border: none;
+}
+

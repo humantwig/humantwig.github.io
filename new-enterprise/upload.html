@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>FLUX</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <div class="overlay-content">
+        <a href="index.html"> Home </a>
+        <a href="shop.html"> Shop </a>
+        <a href="WebApp/index.html" target="_blank">Download App</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <img src="images/circle.svg" alt="" id="circle1" />
+
+    <div class="wrapper">
+      <header class="nav">
+        <nav>
+          <div class="head-navigation">
+            <ul>
+              <li>
+                <a href="index.html"> Home </a>
+              </li>
+              <li>
+                <a href="shop.html"> Shop </a>
+              </li>
+              <li>
+                <a href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="images/LogoType.png" alt="" width="100px" />
+          </div>
+          <div class="login" onclick="parent.location='login.html'">
+            <button>Log In</button>
+          </div>
+          <div class="hamburger">
+            <i class="fas fa-bars" id="hamburgerMenu" onclick="openNav()"></i>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="upload">
+          <div class="uploadform">
+            <h3>Upload your work</h3>
+            <div class="upload-top">
+              <input type="text" placeholder="Name your work" />
+              <i class="fas fa-search"></i>
+            </div>
+            <div class="upload-main">
+              <div class="left">
+                <form action="/action_page.php">
+                  <label for="img">Select image:</label><br>
+                  <input type="file" id="img" name="img" accept="image/*" />
+                  
+                </form>
+              </div>
+              <div class="right">
+              <textarea rows="4" cols="50" name="comment" form="usrform">Details about your work</textarea>
+              <input class="btn" type="submit" />
+            </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="foot-nav">
+        <div>
+          <h5 class="copyright">&#169;2021 FLUX</h5>
+        </div>
+        <div>
+          <img src="images/LogoType.png" alt="" width="100px" />
+        </div>
+        <a href="WebApp/index.html" target="_blank">
+          <button class="download">Download App</button>
+        </a>
+      </div>
+      <div class="line-break"></div>
+      <div class="footer-navigation">
+        <div class="foot-nav1">
+          <ul>
+            <li>
+              <a href=""> Home </a>
+            </li>
+            <li>
+              <a href=""> Shop </a>
+            </li>
+            <li>
+              <a href=""> Contact </a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot-nav2">
+          <ul>
+            <li>
+              <a href=""> Facebook </a>
+            </li>
+            <li>
+              <a href=""> Instagram </a>
+            </li>
+            <li>
+              <a href=""> Twitter </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>

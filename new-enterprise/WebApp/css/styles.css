@@ -1,0 +1,664 @@
+/* Main */
+/* Circle BG */
+/* Top Header */
+/* Homepage Items */
+/* ShopTop */
+/* Footer / Navigation */
+* {
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  font-size: 1.4em;
+  line-height: 1.3;
+  scroll-behavior: smooth;
+  cursor: auto;
+}
+
+body {
+  margin: 0;
+  background: white;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  padding: 6% 10%;
+  height: 100%;
+}
+
+header {
+  font-weight: normal;
+  font-size: 0.8em;
+  display: flex;
+}
+
+header h5 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+#circle1 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: -20%;
+  left: 0%;
+}
+
+#circle2 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  bottom: -35vh;
+  left: 0%;
+}
+
+.backarrow {
+  z-index: 2;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: 34%;
+  width: 30%;
+}
+
+section {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+main div h5 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.featured {
+  width: 100%;
+  height: 220px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px black;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.featured h4 {
+  color: #ff7c0a;
+}
+
+.featured div {
+  margin-top: 0.8em;
+  display: grid;
+  grid-template-columns: 35% 65%;
+  column-gap: 10px;
+  overflow: hidden;
+}
+
+.featured div .daily-art-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured div .daily-art-info p {
+  font-size: 10px;
+  padding-right: 20%;
+  margin-top: 1em;
+}
+
+.featured div .daily-art {
+  width: 90%;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5%;
+  background: url("https://instagrammernewsimg.s3.ap-northeast-1-ntt.wasabisys.com/CJvZ9C4Acxh");
+  background-size: cover;
+  background-position: center;
+}
+
+.ourStory {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px black;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.ourStory h4 {
+  color: #ff7c0a;
+}
+
+.ourStory img {
+  margin-top: 0.8em;
+  width: 5%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ourStory p {
+  margin-top: 1em;
+  font-size: 12px;
+}
+
+.ourStory .hidden {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 12.45%, #ffffff 71.32%);
+}
+
+.shoptop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shoptop div {
+  display: flex;
+}
+
+.search {
+  margin-top: 20px;
+}
+
+.search input {
+  width: 100%;
+  height: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px rgba(165, 120, 120, 0.2);
+  border-radius: 20px;
+  border: none;
+  padding: 5%;
+}
+
+.featured-art {
+  width: 100%;
+  height: 120px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 0 5%;
+}
+
+.featured-art div {
+  display: grid;
+  grid-template-columns: 20% 1fr 1fr;
+  column-gap: 15px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.featured-art div h4 {
+  color: #ff7c0a;
+  font-size: 14px;
+  margin-top: 1.5em;
+}
+
+.featured-art div .daily-art-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-art div .daily-art-info p {
+  font-size: 10px;
+  padding-left: 20%;
+  margin-top: 1em;
+  text-align: right;
+}
+
+.featured-art div .daily-art {
+  width: 90%;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5%;
+  background: url("https://instagrammernewsimg.s3.ap-northeast-1-ntt.wasabisys.com/CJvZ9C4Acxh");
+  background-size: cover;
+  background-position: center;
+}
+
+.shop {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10px;
+  row-gap: 1em;
+  margin-bottom: 6em;
+}
+
+.shop .item {
+  width: 100%;
+  height: 100%;
+}
+
+.shop .item .img {
+  width: 100%;
+  height: 8em;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.shop .item p {
+  margin-top: 1.2em;
+  font-size: 12px;
+}
+
+.shop .item span {
+  font-style: italic;
+  font-size: 12px;
+  color: #ff7c0a;
+}
+
+.shop .item #img1 {
+  background: url("https://i.redd.it/kzkssk4phgc31.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.shop .item #img2 {
+  background: url("https://pbs.twimg.com/media/EXAp149U4AE4LBV.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.shop .item #img3 {
+  background: url("https://scontent.fakl5-1.fna.fbcdn.net/v/t1.6435-9/67390574_425365608106794_1133086460870656000_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=730e14&_nc_ohc=rCs9pyMv1rwAX_8FreR&_nc_ht=scontent.fakl5-1.fna&oh=9688bbccf4c27bd63d582255f600fab1&oe=6155F586");
+  background-size: cover;
+  background-position: center;
+}
+
+.shop .item #img4 {
+  background: url("https://64.media.tumblr.com/19eea90b7dcf779e3f7d74e3610f25c5/tumblr_npqj1d1ZYc1qmlmyuo3_1280.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.shop .item #img5 {
+  background: url("https://i.redd.it/melrxx5qgqm51.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.shop .item #img6 {
+  background: url("https://static.comicvine.com/uploads/original/11131/111312644/6902936-4438177130-83734.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.shop .item #img7 {
+  background: url("https://aninomiyako.files.wordpress.com/2009/09/scannen0007.jpg");
+  background-size: cover;
+  background-position: left;
+}
+
+.shop .item #img8 {
+  background: url("https://i.pinimg.com/originals/ee/cb/09/eecb0964cfe3a805cd7b25b5bc817447.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.profile .profile-pic {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  left: 10%;
+  top: 22%;
+  background: url("https://images.unsplash.com/photo-1629896294785-da44268be891?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.profile .banner {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  margin-top: 0;
+  background: url("https://images.unsplash.com/photo-1630085816622-157556e9c32c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=642&q=80");
+}
+
+.profile .banner div {
+  margin: auto;
+  width: 100%;
+}
+
+.profile .banner div h4 {
+  text-align: center;
+  color: #fff;
+}
+
+.profile .about-user {
+  height: 140px;
+}
+
+.profile .about-user p {
+  font-size: 14px;
+  margin-top: 1em;
+}
+
+.profile .recent-purchase {
+  width: 100%;
+  height: 160px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px black;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.profile .recent-purchase h4 {
+  color: #ff7c0a;
+}
+
+.profile .recent-purchase div {
+  margin-top: 0.2em;
+  display: flex;
+}
+
+.profile .recent-purchase div .daily-art-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile .recent-purchase div .daily-art-info p {
+  font-size: 9px;
+  padding-right: 20%;
+  margin-top: 1em;
+}
+
+.profile .recent-purchase div .daily-art {
+  width: 80%;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5%;
+  background: url("https://instagrammernewsimg.s3.ap-northeast-1-ntt.wasabisys.com/CJvZ9C4Acxh");
+  background-size: cover;
+  background-position: center;
+}
+
+.artist .profile-pic {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 100%;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  left: 10%;
+  top: 22%;
+  background: url("https://www.looper.com/img/gallery/the-ending-of-violet-evergarden-explained/l-intro-1620836316.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.artist .banner {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  margin-top: 0;
+  background: url("https://images.unsplash.com/photo-1549277513-f1b32fe1f8f5?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+}
+
+.artist .banner div {
+  margin: auto;
+  width: 100%;
+}
+
+.artist .banner div h4 {
+  text-align: center;
+  color: #fff;
+}
+
+.artist .about-user {
+  height: 120px;
+}
+
+.artist .about-user p {
+  font-size: 14px;
+  margin-top: 1em;
+}
+
+.artist .product {
+  width: 100%;
+  height: 140px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px black;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.artist .product div {
+  margin-top: 0.2em;
+  display: flex;
+}
+
+.artist .product div .art-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.artist .product div .art-info p {
+  font-size: 9px;
+  padding-right: 20%;
+  margin-top: 1em;
+}
+
+.artist .product div .art {
+  margin-top: 0;
+  width: 80%;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5%;
+  background: url("https://i.redd.it/kzkssk4phgc31.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.saved-list {
+  display: grid;
+  grid-template-columns: 80% 1fr;
+  column-gap: 20px;
+}
+
+.saved-list .saved-item {
+  display: block;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 0 10%;
+}
+
+.saved-list .saved-item .saved-art {
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.saved-list .saved-item .saved-art .saved-art-info p {
+  font-size: 12px;
+  margin-top: 0.5em;
+}
+
+.saved-list .saved-item .saved-art .saved-art-img {
+  width: 50%;
+  height: 80px;
+  background-color: white;
+  box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5%;
+  background: url("https://instagrammernewsimg.s3.ap-northeast-1-ntt.wasabisys.com/CJvZ9C4Acxh");
+  background-size: cover;
+  background-position: center;
+}
+
+.saved-list .move-saved {
+  display: inline-block;
+}
+
+.saved-list .move-saved img {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.product-page .shop-item {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.product-page .shop-item .item-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-page .shop-item .item-top .artist {
+  display: flex;
+}
+
+.product-page .shop-item .item-top .artist h5 {
+  padding-right: 10px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-25%);
+}
+
+.product-page .shop-item .item-top .artist .artist-pic {
+  width: 25px;
+  height: 25px;
+  background-color: white;
+  border-radius: 100%;
+  background: url("https://www.looper.com/img/gallery/the-ending-of-violet-evergarden-explained/l-intro-1620836316.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.product-page .shop-item .product {
+  width: 100%;
+  height: 250px;
+  background-color: white;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 5%;
+  background: url("https://i.redd.it/kzkssk4phgc31.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.product-page .shop-item .art-information {
+  font-size: 14px;
+}
+
+.product-page .shop-item .art-information .cost-save {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-page .shop-item .art-information .cost-save .fa-bookmark {
+  height: 100%;
+  color: #ff7c0a;
+  position: absolute;
+  right: 10%;
+}
+
+.product-page .shop-item .art-information div {
+  margin: 1em 0;
+}
+
+.product-page .shop-item .purchase-button {
+  margin: 1em auto;
+}
+
+.product-page .shop-item .purchase-button button {
+  width: 100%;
+  color: white;
+  background-color: #ff7c0a;
+  padding: 8px 16px;
+  border-radius: 15px;
+  border: none;
+}
+
+footer {
+  background-color: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  font-size: 0.6em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+
+.nav-bar {
+  padding: 2% 20%;
+}
+
+.nav-contents {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-contents div {
+  width: 40px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

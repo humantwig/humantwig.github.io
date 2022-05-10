@@ -1,0 +1,247 @@
+/* Main */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 1.4em;
+  line-height: 1.3;
+  scroll-behavior: smooth;
+  cursor: auto;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  padding: 6% 10%;
+  height: 100vh;
+}
+
+header {
+  font-weight: normal;
+  font-size: 0.8em;
+  display: flex;
+}
+
+header a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#circle1 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: -20%;
+  left: 0%;
+}
+
+#circle2 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  bottom: -30vh;
+  left: 0%;
+}
+
+.backarrow {
+  z-index: 2;
+}
+
+.index {
+  margin-top: 12em;
+}
+
+.index .logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: 34%;
+}
+
+.buttons {
+  width: 100%;
+  margin-top: 4.5em;
+}
+
+.login {
+  margin-bottom: 0.5em;
+}
+
+.login button {
+  width: 100%;
+  color: white;
+  background-color: #FF7C0A;
+  padding: 8px 16px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+}
+
+.signup {
+  margin-bottom: 00.5em;
+}
+
+.signup button {
+  width: 100%;
+  color: white;
+  background-color: #FF7C0A;
+  padding: 8px 16px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+}
+
+.loginform, .signupform {
+  margin-top: 5em;
+}
+
+.loginform h3, .signupform h3 {
+  margin-top: 1em;
+}
+
+.loginform .email, .signupform .email {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginform .email h5, .signupform .email h5 {
+  font-size: 12px;
+  color: #FF7C0A;
+  margin: 1em 0 0.5em 0;
+}
+
+.loginform .email input, .signupform .email input {
+  width: 100%;
+  padding: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: none;
+}
+
+.loginform .username, .signupform .username {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginform .username h5, .signupform .username h5 {
+  font-size: 12px;
+  color: #FF7C0A;
+  margin: 1em 0 0.5em 0;
+}
+
+.loginform .username input, .signupform .username input {
+  width: 100%;
+  padding: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: none;
+}
+
+.loginform .password, .signupform .password {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginform .password h5, .signupform .password h5 {
+  font-size: 12px;
+  color: #FF7C0A;
+  margin: 1em 0 0.5em 0;
+}
+
+.loginform .password input, .signupform .password input {
+  width: 100%;
+  padding: 8px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  border: none;
+}
+
+.loginform div, .signupform div {
+  margin-top: 0.8em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loginform div .keep-login, .signupform div .keep-login {
+  margin-top: 1em;
+}
+
+.loginform div label, .signupform div label {
+  font-size: small;
+  vertical-align: bottom;
+}
+
+.loginform div h4, .signupform div h4 {
+  font-size: small;
+}
+
+.loginform .login-with, .signupform .login-with {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  margin-top: 1em;
+}
+
+.loginform .login-with .login, .signupform .login-with .login {
+  width: 100%;
+  color: white;
+  background-color: #FF7C0A;
+  padding: 8px 16px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+}
+
+.loginform button, .signupform button {
+  margin-top: 1em;
+}
+
+.loginform .login, .signupform .login {
+  width: 100%;
+  color: white;
+  background-color: #FF7C0A;
+  padding: 8px 16px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+}
+/*# sourceMappingURL=splashscreen.css.map */

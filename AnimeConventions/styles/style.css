@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: block;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f9feff;
+  color: black;
+}
+
+.wrapper {
+  max-width: 1000px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  margin: auto;
+}
+
+header {
+  border-right: 2px dashed black;
+  position: fixed;
+  width: 310px;
+  height: 100%;
+  margin: 5em, 0em;
+  padding-right: 30px;
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  top: 0px;
+}
+
+header .about h1 {
+  font-weight: 800;
+}
+
+header .about h2 {
+  font-weight: 800;
+  color: #007ecc;
+}
+
+header .about p {
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+
+header .about a {
+  font-size: 0.7em;
+  color: black;
+}
+
+hr {
+  margin-left: 350px;
+  background-color: black;
+}
+
+section {
+  margin-left: 320px;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+section h1 {
+  margin-bottom: 2em;
+}
+
+section p {
+  margin-bottom: 5em;
+  font-size: 0.9em;
+}
+
+.two canvas {
+  width: 550px;
+  height: 350px;
+  background: #222;
+  border: solid black 2px;
+  margin-bottom: 2em;
+}
+
+.three div {
+  display: flex;
+  flex-direction: column;
+}
+
+.three div .canvas {
+  display: flex;
+}
+
+.three div .canvas iframe {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+
+.three div .canvas button {
+  background-color: #0799F2;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  width: 30%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.three div .canvas button:hover {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=style.css.map */

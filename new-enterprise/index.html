@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>FLUX</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html"> Home </a>
+        <a href="shop.html"> Shop </a>
+        <a href="WebApp/index.html" target="_blank">Download App</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <img src="images/circle.svg" alt="" id="circle1" />
+
+    <div class="wrapper">
+      <header class="nav">
+        <nav>
+          <div class="head-navigation">
+            <ul>
+              <li>
+                <a href="index.html"> Home </a>
+              </li>
+              <li>
+                <a href="shop.html"> Shop </a>
+              </li>
+              <li>
+                <a href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="images/LogoType.png" alt="" width="100px" />
+          </div>
+          <div class="login" onclick="parent.location='login.html'">
+            <button>Log In</button>
+          </div>
+          <div class="hamburger">
+            <i class="fas fa-bars" id="hamburgerMenu" onclick="openNav()"></i>
+          </div>
+        </nav>
+      </header>
+
+      <main class="index">
+        <section class="hero">
+          <div>
+            <div class="hero-info">
+              <h1>
+                Supporting the Animation<br />
+                Industry Directly
+              </h1>
+              <p>
+                FLUX is a service where animators and anime artists can directly
+                upload their work to our service in their own collection space,
+                turning their art into digital NTFS for the users to view and
+                purchase.<br />
+                The users will be able to buy these works for digital ownership
+                using Ethereum which is easier than ever with PayPal support,
+                meaning no prior knowledge of Cryptocurrency is necessary.
+              </p>
+              <div class="buttons">
+                <a href="WebApp/index.html" target="_blank">
+                  <button class="download">Download App</button>
+                </a>
+                <button class="learn-more">Learn More</button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="hero-img">
+              <img src="images/WebPhoneMockup.png" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="featured-art">
+          <div class="art-info">
+            <h1>Daily Featured Art Work</h1>
+            <p>
+              FLUX is a service where animators and anime artists can directly
+              upload their work to our service in their<br />
+              own collection space, turning their art into digital NTFS for the
+              users to view and purchase.
+            </p>
+          </div>
+          <div class="featured">
+            <div class="featured-item">
+              <div class="daily-art-info">
+                <p style="font-weight: bold">辻占の女</p>
+                <p style="color: #bd122e">¥5500 yen</p>
+                <p>Tsujiura Woman-Yusuke Kishi (Weekly Bunshun)</p>
+              </div>
+              <div class="daily-art" id="art1"></div>
+            </div>
+
+            <div class="featured-item">
+              <div class="daily-art-info">
+                <p style="font-weight: bold">感情論</p>
+                <p style="color: #bd122e">¥4800 yen</p>
+                <p>Sentimentalism</p>
+              </div>
+              <div class="daily-art" id="art2"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="foot-nav">
+        <div>
+          <h5 class="copyright">&#169;2021 FLUX</h5>
+        </div>
+        <div>
+          <img src="images/LogoType.png" alt="" width="100px" />
+        </div>
+        <a href="WebApp/index.html" target="_blank">
+          <button class="download">Download App</button>
+        </a>
+      </div>
+      <div class="line-break"></div>
+      <div class="footer-navigation">
+        <div class="foot-nav1">
+          <ul>
+            <li>
+              <a href=""> Home </a>
+            </li>
+            <li>
+              <a href=""> Shop </a>
+            </li>
+            <li>
+              <a href=""> Contact </a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot-nav2">
+          <ul>
+            <li>
+              <a href=""> Facebook </a>
+            </li>
+            <li>
+              <a href=""> Instagram </a>
+            </li>
+            <li>
+              <a href=""> Twitter </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>

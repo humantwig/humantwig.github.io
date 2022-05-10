@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>FLUX</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="index.html"> Home </a>
+        <a href="shop.html"> Shop </a>
+        <a href="WebApp/index.html" target="_blank">Download App</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+
+    <img src="images/circle.svg" alt="" id="circle1" />
+
+    <div class="wrapper">
+      <header class="nav">
+        <nav>
+          <div class="head-navigation">
+            <ul>
+              <li>
+                <a href="index.html"> Home </a>
+              </li>
+              <li>
+                <a href="shop.html"> Shop </a>
+              </li>
+              <li>
+                <a href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="images/LogoType.png" alt="" width="100px" />
+          </div>
+          <div class="login" onclick="parent.location='login.html'">
+            <button>Log In</button>
+          </div>
+          <div class="hamburger">
+            <i class="fas fa-bars" id="hamburgerMenu" onclick="openNav()"></i>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="shoptop">
+          <h3>Shop for Art</h3>
+        </section>
+
+        <section class="search">
+          <input type="text" placeholder="Search" />
+          <div class="filter">
+            <h3>Filter</h3>
+            <div class="filter-options">
+              <div id="filter1">Animated</div>
+              <div id="filter2">Anime Fan Art</div>
+              <div id="filter3">Art</div>
+              <div id="filter4">Keyframes</div>
+            </div>
+            <div class="filter-arrow">
+              <img src="images/SVG/FilterExpand.svg" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="featured-art">
+          <div class="featured">
+            <div class="featured-item">
+              <div class="daily-art-info">
+                <p style="font-weight: bold">辻占の女</p>
+                <p style="color: #bd122e">¥5500 yen</p>
+                <p>Tsujiura Woman-Yusuke Kishi (Weekly Bunshun)</p>
+              </div>
+              <div class="daily-art" id="art1"></div>
+            </div>
+
+            <div class="featured-item">
+              <div class="daily-art-info">
+                <p style="font-weight: bold">感情論</p>
+                <p style="color: #bd122e">¥4800 yen</p>
+                <p>Sentimentalism</p>
+              </div>
+              <div class="daily-art" id="art2"></div>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="shop">
+          <div class="item" onclick="location.href='shopitems/item1.html'">
+            <div class="item-top">
+              <h3>Violet</h3>
+              <div class="artist" onclick="location.href='artist.html'">
+                <h5>Andou, Kyouhei</h5>
+              </div>
+            </div>
+            <div class="img" id="img1"></div>
+            <div class="cost-save">
+              <p style="color: #bd122e">¥6500 yen</p>
+              <i class="far fa-bookmark" onclick="changeIcon()"></i>
+            </div>
+            <p>Key Frame art from the Anime “Violet Evergarden”</p>
+          </div>
+
+          <div class="item" onclick="location.href='shopitems/item2.html'">
+            <div class="item-top">
+              <h3>SHE WILL</h3>
+              <div class="artist" onclick="location.href='artist.html'">
+                <h5>Yoneyama Mai</h5>
+              </div>
+            </div>
+            <div class="img" id="img2"></div>
+            <div class="cost-save">
+              <p style="color: #bd122e">¥8200 yen</p>
+              <i class="far fa-bookmark" onclick="changeIcon()"></i>
+            </div>
+            <p>Anime Styled art by the artist “Yoneyama Mai”</p>
+          </div>
+
+          <div class="item">
+            <div class="item-top">
+              <h3>Rerorero</h3>
+              <div class="artist" onclick="location.href='artist.html'">
+                <h5>Ishimoto, Shunichi</h5>
+              </div>
+            </div>
+            <div class="img" id="img3"></div>
+            <div class="cost-save">
+              <p style="color: #bd122e">¥8200 yen</p>
+              <i class="far fa-bookmark" onclick="changeIcon()"></i>
+            </div>
+            <p>Key Frame art from the Anime “Jojo's Bizzare Adventure”</p>
+          </div>
+
+          <div class="item">
+            <div class="item-top">
+              <h3>Emiya S.</h3>
+              <div class="artist" onclick="location.href='artist.html'">
+                <h5>Motegi, Takayuki</h5>
+              </div>
+            </div>
+            <div class="img" id="img4"></div>
+            <div class="cost-save">
+              <p style="color: #bd122e">¥7600 yen</p>
+              <i class="far fa-bookmark" onclick="changeIcon()"></i>
+            </div>
+            <p>Key Frame art from the Anime “Fate Stay Night”</p>
+          </div>
+
+          <div class="item">
+            <div class="item-top">
+              <h3>Portgas D. Ace</h3>
+              <div class="artist" onclick="location.href='artist.html'">
+                <h5>Boichi</h5>
+              </div>
+            </div>
+            <div class="img" id="img5"></div>
+            <div class="cost-save">
+              <p style="color: #bd122e">¥5500 yen</p>
+              <i class="far fa-bookmark" onclick="changeIcon()"></i>
+            </div>
+            <p>Anime Styled art by the artist “Boichi” (Pen Name)</p>
+          </div>
+
+          <div class="item">
+            <div class="item-top">
+              <h3>Eyeshield</h3>
+              <div class="artist" onclick="location.href='artist.html'">
+                <h5>Yusuke Murata</h5>
+              </div>
+            </div>
+            <div class="img" id="img6"></div>
+            <div class="cost-save">
+              <p style="color: #bd122e">¥6000 yen</p>
+              <i class="far fa-bookmark" onclick="changeIcon()"></i>
+            </div>
+            <p>Anime Styled art by the artist “Yusuke Murata”</p>
+          </div>
+
+          <div class="item">
+            <div class="item-top">
+              <h3>Shiki</h3>
+              <div class="artist" onclick="location.href='artist.html'">
+                <h5>Kadekaru, Chikashi</h5>
+              </div>
+            </div>
+            <div class="img" id="img7"></div>
+            <div class="cost-save">
+              <p style="color: #bd122e">¥6700 yen</p>
+              <i class="far fa-bookmark" onclick="changeIcon()"></i>
+            </div>
+            <p>Key Frame art from the Anime Movie “Kara no Kyoukai”</p>
+          </div>
+
+          <div class="item">
+            <div class="item-top">
+              <h3>Jolyne Cujoh</h3>
+              <div class="artist" onclick="location.href='artist.html'">
+                <h5>Araki Hirohiko</h5>
+              </div>
+            </div>
+            <div class="img" id="img8"></div>
+            <div class="cost-save">
+              <p style="color: #bd122e">¥8000 yen</p>
+              <i class="far fa-bookmark" onclick="changeIcon()"></i>
+            </div>
+            <p>Anime Styled art by the artist “Araki Hirohiko”</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="foot-nav">
+        <div>
+          <h5 class="copyright">&#169;2021 FLUX</h5>
+        </div>
+        <div>
+          <img src="images/LogoType.png" alt="" width="100px" />
+        </div>
+        <a href="WebApp/index.html" target="_blank">
+          <button class="download">Download App</button>
+        </a>
+      </div>
+      <div class="line-break"></div>
+      <div class="footer-navigation">
+        <div class="foot-nav1">
+          <ul>
+            <li>
+              <a href=""> Home </a>
+            </li>
+            <li>
+              <a href=""> Shop </a>
+            </li>
+            <li>
+              <a href=""> Contact </a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot-nav2">
+          <ul>
+            <li>
+              <a href=""> Facebook </a>
+            </li>
+            <li>
+              <a href=""> Instagram </a>
+            </li>
+            <li>
+              <a href=""> Twitter </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="js/script.js"></script>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Experiment Website</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="p5/p5.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div class="about">
+                <h2>Passion Project</h2>
+                <h1>JACOB LUCAS</h1>
+                <p>What are the codes and conventions of anime and how can they be used within Generative Art?</p>
+                <br>
+                <p>Check me out @</p>
+                <a href="https://www.behance.net/jacoballanlucas">
+                    Behance
+                </a>,
+                <a href="https://github.com/humantwig">
+                    GitHub
+                </a><br>
+                <a href="https://dribbble.com/humantwig">
+                    Dribbble
+                </a>,
+                <a href="https://www.instagram.com/teh_twig/">
+                    Instagram
+                </a>
+            </div>
+        </header>
+
+        <section class="one">
+            <h1>Abstract</h1>
+            <p>There are many codes and conventions of anime such as fancy backgrounds, nose bleeds, uwu faces, and
+                other various tropes that make up the majority of anime we watch today.<br>
+                I intended to utilise my
+                research to investigate how anime codes and traditions may be applied to generative art, with the
+                objective of making some myself.<br><br>
+                With this in mind, I looked into generative art and how it can be made given the constraints I had given
+                myself only focusing on recreating various conventions from anime.
+                <br>
+                I used p5.js to produce perlin noise flow fields, random moving line arrangements, and kaleidoscope
+                drawing effects to portray conventions like speed lines, exaggerated images, and flashing colours, which
+                I felt to be some of the simpler conventions to display within this medium.<br><br>
+                During the refinement process, I developed the previous experiments that represented the speed line
+                convention. This is shown through two experiments; a perlin noise flow field example where the lines on
+                the canvas move in random directions, and a random vector example where coloured lines spatially appear
+                from a centre point.<br><br>
+                These then got developed into a single experiment where I combined each, including the movement from the
+                perlin noise experiment and the vector experiment for the main visualisation finally landing on I have
+                currently.<br>
+                This project has helped me learn more about the codes and conventions of anime and how they can be
+                applied in different situations.<br><br>
+                This, however, does not detract from it; rather, it provides material for further discussion or
+                development through various aspects of UX and UI-based mediums, rather than the animation itself.
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- <section class="two">
+            <h1>My Journey</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et efficitur sapien, a iaculis lorem.
+                <br><br>
+                Quisque semper ac lorem eget placerat. Mauris sed dui nec arcu egestas gravida vitae non dui.
+                Pellentesque maximus porta justo, blandit hendrerit purus dignissim et.
+                <br><br>
+                Etiam lacinia neque magna, vitae vulputate enim varius vitae. Curabitur ac eleifend tortor, eget
+                pharetra ipsum. Praesent ac tristique tellus. Suspendisse at nibh nisl. Nulla id elit dapibus, ultricies
+                purus a, pulvinar est. Etiam vel purus ipsum.
+            </p>
+
+            <canvas class=""></canvas>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et efficitur sapien, a iaculis lorem.
+                <br><br>
+                Quisque semper ac lorem eget placerat. Mauris sed dui nec arcu egestas gravida vitae non dui.
+                Pellentesque maximus porta justo, blandit hendrerit purus dignissim et.
+                <br><br>
+                Etiam lacinia neque magna, vitae vulputate enim varius vitae. Curabitur ac eleifend tortor, eget
+                pharetra ipsum. Praesent ac tristique tellus. Suspendisse at nibh nisl. Nulla id elit dapibus, ultricies
+                purus a, pulvinar est. Etiam vel purus ipsum.
+            </p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et efficitur sapien, a iaculis lorem.
+                <br><br>
+                Quisque semper ac lorem eget placerat. Mauris sed dui nec arcu egestas gravida vitae non dui.
+                Pellentesque maximus porta justo, blandit hendrerit purus dignissim et.
+                <br><br>
+                Etiam lacinia neque magna, vitae vulputate enim varius vitae. Curabitur ac eleifend tortor, eget
+                pharetra ipsum. Praesent ac tristique tellus. Suspendisse at nibh nisl. Nulla id elit dapibus, ultricies
+                purus a, pulvinar est. Etiam vel purus ipsum.
+            </p>
+        </section> -->
+
+        <!-- <hr> -->
+
+        <section class="three">
+            <h1>Experiments</h1>
+            <div>
+                <div class="canvas">
+                    <iframe name="exp" scrolling="no" src="experiments/experiment1.html" frameborder="0"></iframe>
+                    <button onclick="refreshIframe();">Reset Experiment</button>
+                </div>
+                <p>This first experiment looks at perlin noise and directional flow fields as this is meant to be the intial idea that represents the speed line and fancy background conventions within anime.
+                </p>
+
+
+                <div class="canvas">
+                    <iframe name="exp2" scrolling="no" src="experiments/experiment2.html" frameborder="0"></iframe>
+                    <button onclick="refreshIframe2();">Reset Experiment</button>
+                </div>
+                <p>I created this experiment after following tutorials on 2d random vectors. The lines sporadically appear from the center point to form a circle made up of lines, this was the next step in developing my final experiment as it is what I initialy intended the visuals to look like.
+                    <br>
+                    By clicking on the canvas I made it so you can stop the experiment while pressing down starts it.
+                </p>
+
+                <div class="canvas">
+                    <iframe name="exp3" scrolling="no" src="experiments/experiment3.html" frameborder="0"></iframe>
+                    <button onclick="refreshIframe3();">Reset Experiment</button>
+                </div>
+                <p>Within this third experiment I played with the mouseX and mouseY functions having the Random 2D Vector lines appearing at the mouse point on the Canvas. <br><br>
+                    I had an idea to give the center point of the final expreiment at a random place on the canvas each itteration to give more randomness and different graphic results.
+                    <br><br>
+                    By holding down the mouse on the canvas, lines will appear sporadically over the canvas.
+                </p>
+
+                <div class="canvas">
+                    <iframe name="exp4" scrolling="no" src="experiments/experiment4.html" frameborder="0"></iframe>
+                    <button onclick="refreshIframe4();">Reset Experiment</button>
+                </div>
+                <p>After further refinment on the previous steps I had combined the perlin noise movment with the random vector visualisation to create what I have here. <br><br>
+                    
+                </p>
+
+
+                <div class="canvas">
+                    <iframe name="exp5" scrolling="no" src="experiments/experiment5.html" frameborder="0"></iframe>
+                    <button onclick="refreshIframe5();">Reset Experiment</button>
+                </div>
+                <p>
+                    For my final experiment worked with pull, push and splice functions to create a looping effect where the lines "Splice" after a certain length of the lines.
+                    This is supposed to create a freeze framed visual that can be used as an art piece rather than a looping video as most generative art seems to be online.
+                    <br><br>
+                    Further along I will incorporate different theme colours relating to different anime and different varitaion to the line width, speed, maybe even noise or other cool effects.
+                </p>
+            </div>
+        </section>
+
+        <!-- <hr>
+
+        <section class="four">
+            <h1>Conclusion</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et efficitur sapien, a iaculis lorem.
+                <br><br>
+                Quisque semper ac lorem eget placerat. Mauris sed dui nec arcu egestas gravida vitae non dui.
+                Pellentesque maximus porta justo, blandit hendrerit purus dignissim et.
+                <br><br>
+                Etiam lacinia neque magna, vitae vulputate enim varius vitae. Curabitur ac eleifend tortor, eget
+                pharetra ipsum. Praesent ac tristique tellus. Suspendisse at nibh nisl. Nulla id elit dapibus,
+                ultricies
+                purus a, pulvinar est. Etiam vel purus ipsum.
+            </p>
+        </section> -->
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

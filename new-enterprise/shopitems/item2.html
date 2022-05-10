@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <title>Product # | FLUX</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <img src="../images/circle.svg" alt="" id="circle1" />
+
+    <div class="wrapper">
+      <header class="nav">
+        <nav>
+          <div class="head-navigation">
+            <ul>
+              <li>
+                <a href="../index.html"> Home </a>
+              </li>
+              <li>
+                <a href="../shop.html"> Shop </a>
+              </li>
+              <li>
+                <a href="#"> Contact </a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <img src="images/LogoType.png" alt="" width="100px" />
+          </div>
+          <div class="login" onclick="parent.location='../login.html'">
+            <button>Log In</button>
+          </div>
+          <div class="hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+        </nav>
+        
+      </header>
+
+      <main class="product-page">
+        <section class="shoptop">
+          <h3>Shop for Art</h3>
+        </section>
+        
+        <section class="search">
+          <input type="text" placeholder="Search" />
+          <div class="filter">
+            <h3>Filter</h3>
+            <div class="filter-options">
+              <div id="filter1">Animated</div>
+              <div id="filter2">Anime Fan Art</div>
+              <div id="filter3">Art</div>
+              <div id="filter4">Keyframes</div>
+            </div>
+            <div class="filter-arrow">
+              <img src="images/SVG/FilterExpand.svg" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="shop-item">
+          <div>
+            <div>
+              <div class="product" id="art2"></div>
+            </div>
+          </div>
+          <div class="art-information">
+            <div class="item-top">
+              <h3>SHE WILL</h3>
+              <div class="artist">
+                <h5>Yoneyama Mai</h5>
+                <div class="artist-pic" id="artistpic2"></div>
+              </div>
+            </div>
+            <div class="cost-save">
+              <p style="color: #ff7c0a">¥8200 yen</p>
+              <i class="far fa-bookmark" onclick="changeIcon()"></i>
+            </div>
+            <div>
+              <p>Anime Styled art by the artist “Yoneyama Mai”</p>
+              <br />
+            </div>
+            <div class="purchase-button">
+              <button>Purchase</button>
+            </div>
+          </div>
+          <div class="related-information">
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="foot-nav">
+        <div>
+          <h5 class="copyright">&#169;2021 FLUX</h5>
+        </div>
+        <div>
+          <img src="images/LogoType.png" alt="" width="100px" />
+        </div>
+        <a href="WebApp/index.html" target="_blank">
+          <button class="download">Download App</button>
+        </a>
+      </div>
+      <div class="line-break"></div>
+      <div class="footer-navigation">
+        <div class="foot-nav1">
+          <ul>
+            <li>
+              <a href=""> Home </a>
+            </li>
+            <li>
+              <a href=""> Shop </a>
+            </li>
+            <li>
+              <a href=""> Contact </a>
+            </li>
+          </ul>
+        </div>
+        <div class="foot-nav2">
+          <ul>
+            <li>
+              <a href=""> Facebook </a>
+            </li>
+            <li>
+              <a href=""> Instagram </a>
+            </li>
+            <li>
+              <a href=""> Twitter </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
