@@ -6,9 +6,9 @@ document.querySelector('header .fa-times').addEventListener('click', function ()
     document.querySelector('header nav').classList.toggle('open')
 })
 
-document.addEventListener('contextmenu', function(e) {
-    e.preventDefault();
-  });
+// document.addEventListener('contextmenu', function(e) {
+//     e.preventDefault();
+//   });
 
 
 //Cursor

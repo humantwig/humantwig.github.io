@@ -3,21 +3,58 @@
   src: url(../font/akira-expanded.otf);
 }
 
+@font-face {
+  font-family: gavency;
+  src: url(../font/gavency_regular.otf);
+}
+
+@font-face {
+  font-family: rayken;
+  src: url(../font/rayken.otf);
+}
+
+
 :root {
   --orange: #ee5625;
+  // --white: #dbdbdb;
   //var(--orange)
   --black: #1c1c1c;
+  // --white: #dbdbdb;
   //var(--black)
-  --white: #e9e4de;
+  // --white: #e9e4de;
+  --white: #f0ece7;
   //var(--white)
-}
+} 
 
 //Hero
 .study-hero {
-  padding-top: 20vh;
+  padding-top: 5vh;
   max-width: 100vw;
   display: flex;
   flex-direction: column;
+
+  .heroimage{
+    img{
+      object-fit: cover;
+      height: 11vh;
+
+      @media screen and (min-width: 620px) {
+        height: 20vh;
+      }
+
+      @media screen and (min-width: 780px) {
+        height: 25vh;
+      }
+  
+      @media screen and (min-width: 1000px) {
+        height: 30vh;
+      }
+
+      @media screen and (min-width: 1500px) {
+        height: 40vh;
+      }
+    }
+  }
 
   div {
     display: flex;
@@ -35,7 +72,7 @@
       .hero-text {
         margin: 1em 0em 0em 0em;
         font-size: 7.4vw;
-        font-family: akira;
+        font-family: rayken;
         line-height: 1;
         z-index: 2;
         @media screen and (min-width: 780px) {
@@ -58,7 +95,7 @@
     }
 
     @media screen and (min-width: 1000px) {
-      padding-top: 3vh;
+      padding-top: 2vh;
     }
   }
   .links {

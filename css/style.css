@@ -3,10 +3,20 @@
   src: url(../font/akira-expanded.otf);
 }
 
+@font-face {
+  font-family: gavency;
+  src: url(../font/gavency_regular.otf);
+}
+
+@font-face {
+  font-family: rayken;
+  src: url(../font/rayken.otf);
+}
+
 :root {
   --orange: #ee5625;
   --black: #1c1c1c;
-  --white: #e9e4de;
+  --white: #f0ece7;
 }
 
 * {
@@ -39,15 +49,15 @@ html {
     display: block;
     position: fixed;
     left: 10px;
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
     transform: translate(-50%, -50%);
     background-color: var(--white);
     mix-blend-mode: difference;
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
-    transition: width 0.5s, height 0.55s ease-in-out;
+    transition: width 0.5s, height 0.5s ease-in-out;
   }
 }
 
@@ -60,22 +70,22 @@ html {
     display: block;
     position: fixed;
     left: 10px;
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     transform: translate(-50%, -50%);
-    border: 2px solid var(--white);
+    border: 1px solid var(--white);
     mix-blend-mode: difference;
     border-radius: 50%;
     pointer-events: none;
     z-index: 9999;
-    transition: 0.1s;
+    transition: 0.15s;
   }
 }
 
 .grow {
-  width: 35px;
-  height: 35px;
-  transition: width 0.55s, height 0.5s ease-in-out;
+  width: 15px;
+  height: 15px;
+  transition: width 0.5s, height 0.5s ease-in-out;
 }
 
 body {
@@ -84,7 +94,7 @@ body {
   color: var(--black);
   font-family: "Montserrat", sans-serif;
   font-family: "Encode Sans Expanded", sans-serif;
-  font-family: akira;
+  font-family: rayken;
   cursor: url("../images/mouse-8.png");
 }
 
@@ -176,7 +186,12 @@ a:hover ~ .cursor-outer {
   font-size: 1.4em;
   margin: 0;
   color: var(--orange);
-  font-family: akira;
+  font-family: gavency;
+}
+
+.logoimg {
+  margin: 0;
+  width: 156px;
 }
 
 .nav-links {
@@ -366,22 +381,22 @@ i {
 
 .hero div .left-hero .hero-text {
   margin: 1em 0em 0em 0em;
-  font-size: 7.4vw;
-  font-family: akira;
+  font-size: 8vw;
+  font-family: rayken;
   line-height: 1;
   z-index: 2;
 }
 
 @media screen and (min-width: 780px) {
   .hero div .left-hero .hero-text {
-    font-size: 7.4vw;
+    font-size: 8vw;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .hero div .left-hero .hero-text {
-    font-size: 4vw;
-    margin: auto 0 auto 0;
+    font-size: 4.5vw;
+    margin: auto 0px auto 0;
   }
 }
 
@@ -607,7 +622,7 @@ i {
 
 .about div .about-text {
   margin: 1em 0em 0em 0em;
-  font-family: akira;
+  font-family: gavency;
   line-height: 1;
   z-index: 2;
   vertical-align: baseline;

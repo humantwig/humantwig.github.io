@@ -4,17 +4,56 @@
   src: url(../font/akira-expanded.otf);
 }
 
+@font-face {
+  font-family: gavency;
+  src: url(../font/gavency_regular.otf);
+}
+
+@font-face {
+  font-family: rayken;
+  src: url(../font/rayken.otf);
+}
+
 :root {
   --orange: #ee5625;
   --black: #1c1c1c;
-  --white: #e9e4de;
+  --white: #f0ece7;
 }
 
 .study-hero {
-  padding-top: 20vh;
+  padding-top: 5vh;
   max-width: 100vw;
   display: flex;
   flex-direction: column;
+}
+
+.study-hero .heroimage img {
+  object-fit: cover;
+  height: 11vh;
+}
+
+@media screen and (min-width: 620px) {
+  .study-hero .heroimage img {
+    height: 20vh;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .study-hero .heroimage img {
+    height: 25vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .study-hero .heroimage img {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .study-hero .heroimage img {
+    height: 40vh;
+  }
 }
 
 .study-hero div {
@@ -36,7 +75,7 @@
 .study-hero div .left-hero .hero-text {
   margin: 1em 0em 0em 0em;
   font-size: 7.4vw;
-  font-family: akira;
+  font-family: rayken;
   line-height: 1;
   z-index: 2;
 }
@@ -68,7 +107,7 @@
 
 @media screen and (min-width: 1000px) {
   .study-hero div {
-    padding-top: 3vh;
+    padding-top: 2vh;
   }
 }
 
