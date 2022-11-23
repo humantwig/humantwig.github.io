@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scrapbook</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <link rel="icon" type="image/x-icon" href="/images/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="nav">
+        <div class="nav-bar">
+          <a href="index.html">
+            <img src="images/logo.svg" class="logo" />
+            <!-- <h1 class="logo">Scrapbook</h1> -->
+          </a>
+          <nav>
+            <ul>
+              <li><a href="">Profile</a></li>
+              <li><a href="">Community</a></li>
+              <li><a href="">Notifications</a></li>
+              <li><a href="">Settings</a></li>
+              <hr />
+              <li><img src="images/logout.svg" /><a href="">Log Out</a></li>
+            </ul>
+            <i class="fas fa-times"></i>
+          </nav>
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+
+      <main>
+        <div class="images">
+          <img src="images/Lamp.svg" alt="" class="lamp" />
+          <img src="images/Clock.svg" alt="" class="clock" />
+          <img src="images/Coaster.svg" alt="" class="coaster" />
+          <img
+            src="images/Mug.svg"
+            id="myImg"
+            onclick="changeImg()"
+            class="mug"
+          />
+          <img src="images/Pen.svg" id="pen" onclick="" class="pen" />
+        </div>
+
+        <div class="book">
+          <div class="first paper">
+            <div class="page front">
+              <div class="intro">
+                <!-- <h2>Jacob Lucas</h2> -->
+                <!-- <h1>Scrapbook</h1> -->
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="second paper">
+            <div class="page front">
+              <div id="container">
+                <h3>Jacobs Scrapbook</h3>
+                <p>Contents</p>
+
+                <ul>
+                  <li>Book 1</li>
+                  <li>Book 2</li>
+                  <li>Book 3</li>
+                  <li>Book 4</li>
+                  <li>Book 5</li>
+                </ul>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="third paper">
+            <div class="page front">
+              <div id="container">
+                <p style="font-weight: light; font-size: 0.6em">August 2006</p>
+                <p style="font-weight: bold; font-size: 0.9em">
+                  Little Rabbit Foo Foo
+                </p>
+                <p>
+                  <br />
+                  The earliest memory I can recall is the day of my 5th
+                  birthday, my last day at kindergarten in fact. <br /><br />
+                  I remember on our birthdays in kindergarten, we got to choose
+                  which book the teacher would read to us, which was the
+                  highlight of my day. Our teacher read books to us frequently,
+                  but today was special because I got to pick. I chose my
+                  favourite one of all, "Little Rabbit Foo Foo," in which a
+                  mischievous rabbit hops around the forest, bopping the little
+                  field mice on the head. I loved this story as a child, I found
+                  it hilarious to watch Rabbit Foo Foo act ridiculously and then
+                  get scolded afterwards.
+                  <br /><br />
+                  I distinctly remember that day, the teacher gathered the
+                  children and I on the mat that day and asked me, "Jacob,
+                  because it's your birthday today, would you like to pick the
+                  story?" Naturally, I said yes and decided on Rabbit Foo Foo.
+                </p>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="fourth paper">
+            <div class="page front">
+              <div id="container">
+                <p>
+                  <br />
+                  I can still picture how happy I was to choose my own story to
+                  be told, and how fixated I was on that book, eyes wide open
+                  when the teacher read it out to the class.
+                  <br /><br />
+                  I distinctly remember that day, the teacher gathered the
+                  children and I on the mat that day and asked me, "Jacob,
+                  because it's your birthday today, would you like to pick the
+                  story?" Naturally, I said yes and decided on Rabbit Foo Foo. I
+                  can still picture how happy I was to choose my own story to be
+                  told, and how fixated I was on that book, eyes wide open when
+                  the teacher read it out to the class.
+                  <br /><br />
+                  Once she finished reading I really wanted the teacher to read
+                  it again, as it was my last day at kindergarten and I wouldn't
+                  have the same opportunity to read that same book again. I
+                  longed for that thrill of being told a story.
+                  <br /><br />
+                  Can you just imagine what it's like, immersing yourself in
+                  something you love so much for that very last time?
+                </p>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="fifth paper">
+            <div class="page front">
+              <div id="container">
+                <p>
+                  <br />
+                  That's what it was like for me, but luckily I was able to grow
+                  up and continue reading, writing, and creating more stories,
+                  not only for me but for others to enjoy. <br /><br />
+                </p>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="sixth paper">
+            <div class="page front">
+              <div id="container">
+                <p style="font-weight: light; font-size: 0.6em">2012</p>
+                <p style="font-weight: bold; font-size: 0.9em">The Hobbit</p>
+                <p>
+                  <br />
+                  My favorite year during primary school was during year 6 when
+                  I was 10-11. This was the time I really found my passion for
+                  stories and storytelling, as our teacher would spend time each
+                  week reading books to the class such as The Hobbit.
+                  <br /><br />
+                  Again much like when I was much younger, we would sit down in
+                  class a few times a week while our teacher would read such
+                  books to us. We would sit in silence and I often close my eyes
+                  to imagine the scenarios happening in the book, playing out in
+                  my mind so vividly that it felt real.
+                  <br /><br />
+                  With this spark of creativity, I would spend time each day
+                  writing my own stories and illustrating my own stick-figure
+                  comic books where I could let my imagination go wild. I am so
+                  grateful to have been brought up this way, being able to have
+                  a fictional outlet, constantly at my fingertips as I can't
+                  even imagine another life where I wasn't an avid reader.
+                  <br /><br />
+                </p>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="seventh paper">
+            <div class="page front">
+              <div id="container">
+                <p style="font-weight: light; font-size: 0.6em">
+                  Sep 2021 - Jan 2022
+                </p>
+                <p style="font-weight: bold; font-size: 0.9em">
+                  Omniscient Readers Viewpoint
+                </p>
+                <p>
+                  <br />
+                  All my life, I have enjoyed reading, telling stories, and
+                  entering the lives and worlds of fiction. However, I stopped
+                  reading books throughout my time in college and started
+                  hanging out with friends, playing video games, and going to
+                  the movies instead. I feel as though it had a negative impact
+                  on my creativity and imagination as reading gave me that
+                  outlet that nothing else could.
+                  <br /><br />
+                  Reading the novel Omniscient Readers Viewpoint, sent me right
+                  back to my childhood and made me realize how much I still love
+                  to read and use my imagination. I started reading the book
+                  simply out of love for the recent comic adaptation.
+                  <br /><br />
+                  I read it in my free time while riding the train, going to
+                  school, or just relaxing at home in the sun. As I read it
+                  more, I found myself really appreciating and connecting to the
+                  story with the many characters that were explored in its
+                  fictional world.
+                  <br /><br />
+                </p>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="eighth paper">
+            <div class="page front">
+              <div id="container">
+                <p>
+                  <br />
+                  I became attached to the main character, Dokja Kim, since he
+                  was built on the concept of a reader, someone who lived their
+                  life with their head in a book much like my own life.
+                  <br /><br />
+                  I felt a sense of identification with him and a want to learn
+                  more about his experience by getting to know him better. I
+                  found this story to be more of an experience than a book, one
+                  that taught me more about who I am than any other story I've
+                  read in the past.
+                  <br /><br />
+                  Now that I've experienced that emotion and feeling, I'm always
+                  looking for the next story that will give me that same spark
+                  as before, and I hope everyone can find a story that can
+                  ignite their own spark the way that Omniscient Reader did for
+                  me.
+                </p>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="ninth paper">
+            <div class="page front last">
+              <div id="container">
+                <form>
+                  <input type="text" class="date" placeholder="Input Date">
+                  <input type="text" class="title" placeholder="Input Title">
+                    <textarea rows="10" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget mollis velit. Ut eget accumsan nunc. Sed euismod ligula sit amet orci interdum, ac pellentesque leo fringilla."></textarea>
+                  </form>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <!-- <div class="tenth paper">
+            <div class="page front">
+              <div id="container">
+                <p></p>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="eleventh paper">
+            <div class="page front">
+              <div id="container">
+                <p></p>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div>
+          <div class="twelth paper">
+            <div class="page front last">
+              <div id="container">
+                <p></p>
+              </div>
+            </div>
+            <div class="page back"></div>
+          </div> -->
+          <!-- <div class="side"></div>
+        <div class="bottom"></div> -->
+          <div class="shadow"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://rawcdn.githack.com/akzhy/Vara/c55a1b40c15b808cdd4a047de95c905094be87db/src/vara.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
