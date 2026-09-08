@@ -1,0 +1,505 @@
+:root {
+	--bg: #ffffff;
+	--bg-raised: #0d0d0d;
+	--text: #000000;
+	--text-muted: #8f8a80;
+	--border: #242220;
+	--heat: linear-gradient(100deg, #000000 0%, #5c250c 22%, #e5622b 52%, #ff9d3d 76%, #fff3e0 100%);
+	--chrome: linear-gradient(150deg, #ffffff 0%, #8a8a8a 22%, #ffffff 42%, #5c5c5c 58%, #ffffff 76%, #a6a6a6 100%);
+	/*	--max-w: 1180px;*/
+	--edge: clamp(20px, 5vw, 64px);
+	--font-main: "Oswald", sans-serif;
+	--font-alt: "Inter", sans-serif;
+	--font-cool: "Bokor", system-ui;
+
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
+* {
+    box-sizing: border-box
+}
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font-family: var(--font-main);
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	position: relative;
+	overflow-x: hidden;
+	&::before {
+		content: "";
+		position: fixed;
+		inset: 0;
+		z-index: 1;
+		pointer-events: none;
+		background-image: radial-gradient(rgba(0,0,0,0.09) 1px, transparent 1.4px);
+		background-size: 14px 14px;
+	}
+	&::after {
+		content: "";
+		position: fixed;
+		inset: 0;
+		z-index: 1;
+		pointer-events: none;
+		opacity: 0.09;
+		background: repeating-linear-gradient(0deg, rgba(255,255,255,0.8) 0px, rgba(255,255,255,0.8) 1px, transparent 1px, transparent 3px);
+	}
+}
+a {
+	color: var(--text);
+	text-decoration: none;
+}
+
+h2 {
+    font-family: var(--font-alt);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+::selection {
+	background: #e5622b;
+	color: #000;
+}
+
+:focus-visible {
+	outline: 2px solid #ff9d3d;
+	outline-offset: 3px;
+}
+
+.wrap {
+	max-width: var(--max-w);
+	padding-left: var(--edge);
+	padding-right: var(--edge);
+	position: relative;
+	z-index: 2;
+}
+
+
+
+/* 1. THE BACKGROUND TEXT */
+.giant-bg-text {
+	position: absolute;
+	top: 52%;
+	left: 55%;
+	transform: translate(-50%, -50%);
+	font-size: 60vw;
+	font-family: var(--font-cool);
+	font-weight: 900;
+	line-height: 1;
+	white-space: nowrap;
+	/* Visual layering adjustments */
+	color: #111111; /* Or use a subtle grey like rgba(0,0,0,0.05) if you want it faint */
+	z-index: 1; /* Pushes it down to layer 1 */
+	/* Critical Usability Settings */
+	pointer-events: none; /* Allows mouse clicks/scrolls to pass right through the letters */
+	user-select: none; /* Prevents the text from being highlighted accidentally */
+
+	background: linear-gradient( 90deg, rgba(255, 255, 255, 0) 0%, /* Completely fades away on the far left */
+	rgba(0, 0, 0, 0.3) 30%, /* Light gray where your small text sits */
+	rgba(0, 0, 0, 0.7) 50%, /* Deepening mid-tone gray */
+	rgba(0, 0, 0, 1) 70% /* True black on the right edge */
+	);
+	-webkit-background-clip: text; /* Clips the gradient to the shape of the letters */
+	background-clip: text;
+	color: transparent; /* Hides solid color so the gradient shines through */
+
+	-webkit-mask-image: repeating-linear-gradient( 0deg, #000000, #000000 1px, /* Thickness of your text stripes */
+	transparent 2px, transparent 4px /* Size of the white horizontal pattern gaps */
+	);
+	mask-image: repeating-linear-gradient( 0deg, #000000, #000000 2px, transparent 2px, transparent 5px );
+	
+	
+	transition: transform 0.05s ease-out;
+	will-change: transform;
+}
+
+
+
+
+
+
+
+section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-bottom: 50vh;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+
+
+/* ---------- HERO ---------- */
+.hero {
+	position: relative;
+	min-height: 100vh;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 0;
+	padding-bottom: 0;
+	color: #000;
+}
+
+.hero-main {
+    height: 100%;
+    padding-left: 18vw;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	max-width: 480px;
+	padding-top: 0;
+	padding-bottom: 2rem;
+	transition: transform 0.05s ease-out;
+	will-change: transform;
+}
+
+
+
+
+
+/* ---------- ABOUT ---------- */
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10rem;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    position: relative;
+    z-index: 2;
+    margin-top: 100vh;
+}
+
+
+.about-me {
+    flex: 1;
+    max-width: 480px;
+    font-family: var(--font-alt);
+    font-size: 14px;
+    line-height: 1.5;
+    align-items: flex-start;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    p {
+        font-family: var(--font-alt);
+        font-size: 2em;
+        letter-spacing: -0.02em;
+        font-weight: 600;
+    }
+}
+
+
+
+img {
+	width: 30vw;
+	height: 30vw;
+	object-fit: cover;
+	object-position: 50% 20%;
+}
+
+
+.about-img {
+	position: relative;
+	display: inline-block;
+}
+
+
+
+
+
+/* ---------- WORK ---------- */
+
+.work {
+	padding-top: 48px;
+	padding-bottom: 48px;
+	position: relative;
+	z-index: 2;
+	margin: 10vh;
+}
+
+.work-header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 28px;
+	position: relative;
+	z-index: 2;
+
+	h2 {
+		font-size: 30vh;
+		font-family: var(--font-cool);
+		color: #111111; /* Or use a subtle grey like rgba(0,0,0,0.05) if you want it faint */
+		z-index: 1; /* Pushes it down to layer 1 */
+		/* Critical Usability Settings */
+		pointer-events: none; /* Allows mouse clicks/scrolls to pass right through the letters */
+		user-select: none; /* Prevents the text from being highlighted accidentally */
+
+		background: linear-gradient( 90deg, rgba(255, 255, 255, 0) 0%, /* Completely fades away on the far left */
+		rgba(0, 0, 0, 0.3) 30%, /* Light gray where your small text sits */
+		rgba(0, 0, 0, 0.7) 50%, /* Deepening mid-tone gray */
+		rgba(0, 0, 0, 1) 70% /* True black on the right edge */
+		);
+		-webkit-background-clip: text; /* Clips the gradient to the shape of the letters */
+		background-clip: text;
+		color: transparent; /* Hides solid color so the gradient shines through */
+
+		-webkit-mask-image: repeating-linear-gradient( 0deg, #000000, #000000 0.1px, /* Thickness of your text stripes */
+		transparent 0.2px, transparent 0.4px /* Size of the white horizontal pattern gaps */
+		);
+/*		mask-image: repeating-linear-gradient( 0deg, #000000, #000000 0.2px, transparent 0.2px, transparent 5px );*/
+	}
+}
+
+
+.work-list {
+	position: relative;
+	z-index: 2;
+}
+
+.work-row {
+	display: grid;
+	grid-template-columns: 56px 1fr 90px 110px 60px;
+	align-items: center;
+	gap: 16px;
+	padding: 22px 0;
+	border-top: 1px solid var(--border);
+	text-decoration: none;
+	color: inherit;
+	position: relative;
+	overflow: hidden;
+}
+
+	.work-row:last-child {
+		border-bottom: 1px solid var(--border);
+	}
+
+	.work-row .w-num {
+		font-family: var(--font-alt);
+		font-weight: 500;
+		font-size: clamp(22px,3vw,32px);
+		color: var(--text-muted);
+	}
+
+	.work-row .w-title {
+		font-family: var(--font-alt);
+		font-weight: 600;
+		font-size: clamp(20px,3.4vw,34px);
+		line-height: 1.05;
+		position: relative;
+		z-index: 2;
+		transition: color .2s ease;
+	}
+
+	.work-row:hover .w-title {
+		color: #27506b;
+	}
+
+	.work-row .w-tag {
+		font-family: var(--font-alt);
+		font-size: 11px;
+		letter-spacing: 0.03em;
+		color: var(--text-muted);
+		text-transform: uppercase;
+	}
+
+	.work-row .w-year {
+		font-family: var(--font-alt);
+		font-size: 12px;
+		color: var(--text-muted);
+		text-align: right;
+	}
+
+	/* dotted halftone bleed — decorative, sits behind the title, fades toward the edge */
+	.work-row .w-dots {
+		position: absolute;
+		top: -40%;
+		right: 14%;
+		width: 220px;
+		height: 180%;
+		background-image: radial-gradient(rgba(255,255,255,0.5) 1px, transparent 1.3px);
+		background-size: 6px 6px;
+		-webkit-mask-image: radial-gradient(circle at 30% 50%, #000 0%, transparent 70%);
+		mask-image: radial-gradient(circle at 30% 50%, #000 0%, transparent 70%);
+		opacity: 0.4;
+		z-index: 1;
+		pointer-events: none;
+	}
+
+
+
+
+
+/* Top Navigation Bar */
+.project-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px var(--edge);
+	border-bottom: 1px solid var(--border);
+	font-family: var(--font-alt);
+	font-size: 13px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+
+	.project-nav .back-home {
+		color: var(--text);
+		text-decoration: none;
+		font-weight: 700;
+		transition: opacity 0.2s ease;
+	}
+
+		.project-nav .back-home:hover {
+			opacity: 0.6;
+		}
+
+	.project-nav .nav-year {
+		color: var(--text-muted);
+	}
+
+/* Header Alignment overrides for project pages */
+.project-main-header {
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 40px;
+
+	h2 {
+		font-family: var(--font-cool);
+		font-size: 40vh;
+	}
+}
+
+/* Metadata Breakdown Table Layout */
+.project-meta-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 20px;
+	border-top: 1px solid var(--border);
+	border-bottom: 1px solid var(--border);
+	padding: 20px 0;
+	margin-bottom: 60px;
+}
+
+.p-meta-cell {
+	display: flex;
+	flex-direction: column;
+}
+
+.p-meta-label {
+	font-family: var(--font-alt);
+	font-size: 11px;
+	color: var(--text-muted);
+	letter-spacing: 0.05em;
+	margin-bottom: 6px;
+}
+
+.p-meta-val {
+	font-family: var(--font-sans);
+	font-size: 15px;
+	font-weight: 500;
+	color: var(--text);
+}
+
+/* Dual Column Content Grid Alignment */
+.project-showcase-container {
+	display: grid;
+	grid-template-columns: 1fr 1.2fr;
+	gap: 60px;
+	align-items: start;
+	margin-bottom: 100px;
+}
+
+/* Left-column Text Area Styles */
+.project-info-text {
+	font-family: var(--font-sans);
+	color: var(--text);
+}
+
+	.project-info-text .project-lead {
+		font-size: 20px;
+		line-height: 1.5;
+		margin-bottom: 24px;
+		font-weight: 500;
+	}
+
+	.project-info-text p {
+		font-size: 15px;
+		line-height: 1.6;
+		margin-bottom: 20px;
+		color: var(--text);
+	}
+
+/* Right-column Media Elements Style */
+.project-media-wrapper {
+	border: 1px solid var(--border);
+	background-color: var(--bg);
+	overflow: hidden;
+}
+
+	.project-media-wrapper img {
+		width: 100%;
+		height: auto;
+		display: block;
+		object-fit: cover;
+	}
+
+.project-media-caption {
+	font-family: var(--font-alt);
+	font-size: 11px;
+	letter-spacing: 0.05em;
+	color: var(--text-muted);
+	margin-top: 12px;
+}
+
+/* Bottom Footer Navigation Block */
+.project-footer-bar {
+	border-top: 1px solid var(--border);
+	padding: 60px var(--edge);
+	text-align: center;
+}
+
+	.project-footer-bar a {
+		font-family: var(--font-alt);
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 0.05em;
+		color: var(--text);
+		text-decoration: none;
+		transition: color 0.2s ease;
+	}
+
+		.project-footer-bar a:hover {
+			color: var(--text-muted);
+		}
+
+/* Responsive Adaptive Viewports */
+@media (max-width: 850px) {
+	.project-showcase-container {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+}
